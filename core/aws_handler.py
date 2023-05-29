@@ -23,4 +23,4 @@ if __name__ == '__main__':
     print(a)
     import pandas as pd
     df = pd.read_csv(a)
-    # print(df)
+    print(df)
