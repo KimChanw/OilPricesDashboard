@@ -16,7 +16,6 @@ def index(request):
     start_date = request.GET.get('start_month') or '2013-01'
     end_date = request.GET.get('end_month') or '2023-04'
 
-    print(start_date, end_date)
     # 해당 일자의 데이터가 있는지 확인
     try:
         oil_price_df = get_time_series_dataframe(start_date, end_date)
